@@ -1,4 +1,4 @@
-lorenz:lorenz.c
-	gcc -o lorenz lorenz.c -framework OpenGL -framework GLUT
+lorenz: lorenz.c
+	gcc -o $@ $< -lGL -lGLU -lglut
 clean:
 	rm lorenz
